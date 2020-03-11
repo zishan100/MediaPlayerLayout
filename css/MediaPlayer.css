@@ -1,0 +1,1024 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #0c1027;
+  --secondary-color: #141b41;
+  --text-color: #c5c3c3;
+  --text-color-secondary: #fff;
+}
+body {
+  margin: 0px;
+  font-family: "Handlee";
+
+  color: white;
+  background-color: #04042e;
+}
+
+::-webkit-scrollbar {
+  color: #04042e;
+}
+.ml {
+  margin-left: 20px;
+}
+.mr {
+  margin-right: 20px;
+}
+.mx {
+  margin: 0 0.7rem;
+}
+.my {
+  margin: 1rem 0;
+}
+.mt {
+  margin-top: 20px;
+}
+.mb {
+  margin-bottom: 40px;
+}
+.mauto {
+  text-align: center;
+  margin-top: -10px;
+}
+/*nav-container*/
+.nav-container {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  background-color: #04042e;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  height: 90px;
+
+  margin: 0 auto;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+nav > div {
+  margin: 0 20px; /* adding 20px right and left margin to all the direct child divs of the nav*/
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container img {
+  width: 160px;
+}
+.flex-2 {
+  /* to make the the particular element larger than the others*/
+  flex: 2;
+  text-align: center;
+}
+.flex-2 p {
+  color: white;
+}
+.search-box-container {
+  position: relative; /* used pos relative here to have the search and mic icons over the search box*/
+}
+
+.search-box-search {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  color: rgb(197, 195, 195);
+}
+
+.search-box-text {
+  position: absolute;
+  top: 6px;
+  left: 50px;
+  color: rgb(197, 195, 195);
+  font-size: 0.95rem;
+}
+
+.search-box-mic {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: grey;
+}
+
+.search-box {
+  background-color: #151546;
+  border: 0;
+  height: 1.8rem;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 70px;
+  margin-top: 15px;
+}
+
+.my-photo img {
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.notification-bell {
+  position: relative;
+  transition: 0.2s;
+  animation: shake 4s infinite 3s;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-15deg);
+  }
+  10% {
+    transform: rotate(15deg);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  35% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* .nav-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: 2;
+  z-index: 1;
+  background-color: #04042e;
+}
+
+.nav-container nav {
+  position: relative;
+  left:0;
+  right: 0;
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+.ninjas-logo{
+  position: relative;
+ margin-top: 1.5rem;
+   left:4%;
+}
+.ninjas-logo img {
+  background-size: contain;
+  height: 50px;
+  width: 120px;
+}
+ .favorate{
+   position: relative;
+   margin-top: 2.2rem;
+   left:5%;
+ }
+.search-box-container {
+  position: relative;
+  margin-top: 2rem;
+  left:-2%;
+  
+  display: flex;
+}
+.notification-bell {
+  position: absolute;
+  top: 35%;
+  right: 17%;
+}
+.myphoto{
+  position: relative;
+  margin-top: 2rem;
+  right: 5%;
+}
+.myphoto img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.text-decorations {
+  text-decoration: none;
+  color: white;
+}
+.search-box input {
+  width: 250px;
+  height: 20px;
+  border-radius: 1.5rem;
+}
+.fa-search {
+  position: relative;
+  left: 12%;
+  top: 2%;
+  color: grey;
+  height: 25px;
+  width: 25px;
+}
+.fa-microphone-alt {
+  position: relative;
+  left: -10%;
+  top: 2%;
+  color: grey;
+  height: 25px;
+  width: 25px;
+}
+.search-box::before {
+  content: "Search";
+  color: white;
+  position: relative;
+  left: 35%;
+}
+input[type="text"] {
+  padding: 5px;
+  padding-left: 30px;
+  background-color: #151546;
+  border: none;
+} */
+
+/*main-container*/
+.main-container {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/*main Tag*/
+main {
+  position: absolute;
+  height: 90vh;
+  width: 70%;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+/*section*/
+
+main > div {
+  width: 100%;
+  position: relative;
+}
+
+/*animation-container*/
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  /* border:1px solid white;*/
+  margin-top: 18%;
+}
+.transition-image {
+  position: relative;
+  left: 3%;
+  margin: 0 10px 0 10px;
+  height: 100%;
+  width: 28%;
+}
+.transition-image img {
+  border-radius: 0.5rem;
+  height: 80%;
+  width: 100%;
+}
+.transition-image img:hover {
+  position: relative;
+  box-shadow: 2px 2px 6px 4px grey;
+  transition: 0.2s;
+  transform: scale(1.3, 1.2);
+  z-index: 1;
+}
+
+/*Latest-Release*/
+
+#Release-section {
+  width: 100% !important;
+  position: relative;
+  margin: auto;
+}
+
+.fa-play {
+  position: absolute;
+  top: 32%;
+  left: 13%;
+  color: white;
+  opacity: 0;
+  font-size: 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Release-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  /*border:1px solid white;*/
+}
+
+.image-containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  left: 0%;
+  margin: 0px 0px 10px 0px;
+
+  min-width: 220px;
+  height: 20%;
+  width: 35%;
+  /* border:1px solid white;
+*/
+}
+
+.R-image {
+  width: 25%;
+}
+.R-image img {
+  min-width: 35px;
+  width: 140%;
+  height: 100%;
+  border-radius: 0.6rem;
+}
+.R-image:hover .fa-play {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.R-image:hover img {
+  opacity: 0.5;
+}
+.image-detail {
+  font-size: 12px;
+  width: 50%;
+  position: relative;
+  top: 0%;
+  left: 10%;
+}
+
+.image-duration {
+  position: relative;
+  top: 3%;
+  right: 1%;
+}
+.image-duration span {
+  display: block;
+}
+.image-duration i {
+  font-size: 20px;
+}
+.time-size {
+  font-size: 10px;
+}
+input[type="checkbox"] {
+  display: none; /* hiding the checboxes*/
+}
+.latest-release-dropdown {
+  padding: 20px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  opacity: 0; /* to make this element not visible in default state*/
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.35s ease-in-out;
+  z-index: 1;
+  border: 1px solid white;
+  box-shadow: 0px 0px 2px white;
+}
+
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+  /* when the checbox is clicked, then the the dropdown element is visible*/
+  position: absolute;
+  background-color: #04042e;
+  width: 175px;
+  height: 175px;
+  top: 15px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 1;
+  font-size: 0.8rem;
+  transition: 0.25s ease-in-out;
+}
+.drop-menu {
+  display: flex;
+
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  width: 100%;
+}
+.drop-menu p {
+  width: 80%;
+  text-align:left;
+  margin: 0 .2rem;
+}
+.drop-menu i {
+  width: 20%;
+  margin: 0 .2rem;
+  
+}
+
+.latest-release-dropdown .hr-line {
+  width: 130%;
+  margin: 0 -20px;
+  flex: 0;
+  height: 20px;
+}
+
+/* end of latest release */
+/*Popular-Artists*/
+.heading-section {
+  margin-left: 20px;
+}
+.Release-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  /* border:1px solid white;*/
+}
+.popular-artist-container {
+  width: 100%;
+  margin: inherit;
+  margin-top: 40px;
+}
+.play-icon {
+  opacity: 0;
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  color: white;
+  font-size: 32px;
+}
+
+.Popular-image:hover .play-icon {
+  opacity: 1;
+}
+.Popular-image:hover img {
+  opacity: 0.6;
+}
+.Popular-image {
+  position: relative;
+}
+.Popular-image img {
+  margin: 10px;
+  width: 90px;
+  height: 100px;
+  border-radius: 0.8rem;
+}
+.popular-music-type {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  background-color: #141442;
+}
+.music-type {
+  position: relative;
+}
+.music-type img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.caption {
+  font-family: serif;
+  position: absolute;
+  left: 38px;
+  top: 34px;
+}
+
+.popular-genre {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: auto;
+}
+.genre-image {
+  width: 32%;
+  position: relative;
+  min-width: 250px;
+  height: 140px;
+  margin: 6px auto;
+  overflow: hidden;
+}
+.genre-image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.genre-image img:hover {
+  transform: scale(1.3, 1.3);
+}
+
+/*Latest English Section*/
+#latest-english {
+  position: relative;
+}
+.latest-english-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+}
+.english-media {
+  margin: 10px;
+}
+.english-media img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.6rem;
+}
+.media-detail1 {
+  font-family: monospace;
+  font-size: 15px;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+.media-date {
+  font-style: initial;
+  font-size: 12px;
+  margin-left: 10px;
+}
+/*aside-Section*/
+/* aside toggle */
+
+#aside-toggle:checked ~ #aside {
+  display: block;
+}
+.show-aside-toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  height: 20px;
+  width: 100px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 2px;
+  background: linear-gradient(to right, #3524af, #c248df);
+  box-shadow: 0px 0px 2px 0.5px rgba(250, 250, 250, 1);
+}
+/* end of aside toggle */
+aside {
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  width: 26%;
+  height: 78vh;
+
+  overflow-y: scroll;
+}
+
+/* aside-heading*/
+
+.aside-Head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /*border:1px solid white;*/
+}
+.dropdown {
+  width: 35%;
+}
+.dropdown label {
+  position: absolute;
+  font-size: 100%;
+  top: 36%;
+  left: 65%;
+}
+.dropdown i {
+  font-size: 100%;
+  /*position:absolute;   
+   top:42%;
+   left:95%;*/
+}
+
+/*Queue Playlist List*/
+.Queue-song-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.song-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /*justify-content:space-between;*/
+
+  /*border:1px solid white;*/
+  margin: 10px 0px;
+}
+.song-container:hover {
+  transition: all 0.5s;
+  box-shadow: 0px 0px 5px 2px #888888;
+}
+.music-pic {
+  width: 20%;
+  padding-left: 8px;
+}
+.music-pic img {
+  width: 100%;
+  min-width: 35px;
+  min-height: 45px;
+  border: 1px solid white;
+}
+.music-detail {
+  width: 50%;
+}
+.music-detail .label1 {
+  font-size: 15px;
+  font-style: normal;
+  font-family: cursive;
+  position: absolute;
+  left: 26%;
+  top: 5%;
+}
+.music-detail .label2 {
+  font-size: 15px;
+  position: absolute;
+  left: 26%;
+  top: 50%;
+  color: lightgrey;
+}
+.music-icon i {
+  position: absolute;
+  left: 80%;
+  top: 31%;
+}
+.latest-release-dropdowns {
+  padding: 20px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  opacity: 0; /* to make this element not visible in default state*/
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.35s ease-in-out;
+  z-index: 1;
+  border: 1px solid white;
+  box-shadow: 0px 0px 2px white;
+}
+
+input[type="checkbox"]:checked ~ .latest-release-dropdowns {
+  /* when the checbox is clicked, then the the dropdown element is visible*/
+  position: absolute;
+  background-color: #04042e;
+  width: 175px;
+  height: 90px;
+  top: 70%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 1;
+  font-size: 0.8rem;
+  transition: 0.25s ease-in-out;
+}
+/********* footer ********/
+.footer {
+  background: rgb(51, 47, 47);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-left-align {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-left-align img {
+  width: 50px;
+  min-height: 60px;
+  margin-top: 0.5rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.description p {
+  flex-grow: 1;
+  margin: 2px;
+  font-size: 0.8rem;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+}
+.footer-icon i {
+  margin: 5px;
+}
+/* middle-footer */
+.footer-middle-align {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+.footer-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.footer-icons i {
+  position: relative;
+
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.footer-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.custom-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #d3d3d3;
+  border-radius: 10rem;
+  outline: none;
+  opacity: 1;
+}
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgb(58, 61, 58);
+  cursor: pointer;
+}
+
+/* footer-right */
+.footer-right-align {
+  position: relative;
+  top: 0;
+  left: -10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.volume-icon {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigator-icon {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.custom-range1 {
+  -webkit-appearance: none;
+  width: 150%;
+  height: 5px;
+  background: #d3d3d3;
+  border-radius: 10rem;
+  outline: none;
+  opacity: 1;
+}
+.custom-range1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgb(58, 61, 58);
+  cursor: pointer;
+}
+.navigator-icon i {
+  position: relative;
+  left: 10px;
+  top: 3px;
+}
+/* end of foooter */
+/* Animation     */
+.logo-container {
+  animation: fromRight 0.75s;
+}
+
+.my-photo {
+  animation: fromLeft 0.75s;
+}
+@keyframes fromRight {
+  from {
+    transform: translate(1000px);
+  }
+}
+@keyframes fromLeft {
+  from {
+    transform: translate(-1000px);
+  }
+}
+/* slide    */
+.slideIn {
+  animation: slideIn 0.75s;
+}
+.slideIn2 {
+  animation: slideIn2 0.75s;
+}
+.slideIn3 {
+  animation: slideIn3 0.75s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    transform: translateX(-2000px);
+  }
+}
+@keyframes slideIn3 {
+  from {
+    transform: translateX(-3000px);
+  }
+}
+/* top  */
+#Release-section h1 {
+  animation: fromTop1 0.8s;
+}
+.fromRight {
+  animation: fromRight 0.75s;
+}
+.fromLeft {
+  animation: fromLeft 0.75s;
+}
+@keyframes fromTop1 {
+  from {
+    transform: translateY(-1000px);
+  }
+}
+/* aside */
+@keyframes enlarge {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.enlarge {
+  animation: enlarge 0.6s;
+}
+#aside {
+  animation: fromBottom 1.45s;
+}
+
+@keyframes fromBottom {
+  from {
+    transform: translateY(2000px);
+  }
+}
+/*To Make Music Player Responsive Design here 
+  we use media Queries */
+
+@media only screen and (max-width: 868px) {
+  nav{
+     height: 20vh;
+  }
+   .image-container{
+     margin-top:9rem;
+   }
+  aside {
+    display: none;
+    /*position:absolute;
+    top:12%;
+    right:25px;
+    width:22%;
+    height:90vh;
+    overflow-y:scroll;*/
+  }
+  .fa-play{
+     position: absolute;
+     left: 9%;
+     top:38%;
+  }
+  .show-aside-toggle {
+    /* making the aside toggle visible which will then be used to show and hide aside section*/
+    position: fixed;
+    display: block;
+    right: 2%;
+    top: 216px;
+    overflow: visible;
+  }
+
+  #aside {
+    /* making the aside section fixed position so that it can appear over other elements*/
+    position: fixed;
+    top: 285px;
+    right: 2%;
+    width: 220px;
+    height: 350px;
+    z-index: 2;
+    background-color: #151546;
+    animation: fromRight 0.5s;
+    padding: 5px;
+    box-shadow: 0px 0px 2px 0.5px rgba(250, 250, 250, 1);
+  }
+  main {
+    width: 100%;
+  }
+  .transition-image {
+    position: relative;
+    left: 0%;
+    width: 30%;
+  }
+  /*Animation Gallery Section */
+  .image-container {
+    width: 100%;
+  }
+  /*Latest Release Section*/
+
+  .image-containers {
+    width: 100%;
+  }
+  .R-image {
+    width: 15%;
+  }
+
+  .play-icon {
+    position: absolute;
+    left: 43%;
+    top: 35%;
+  }
+  .popular-artist {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .image-container {
+    width: 100%;
+    margin-top: 150px;
+  }
+}

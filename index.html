@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media-Player</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- css-link-file -->
+    <link rel="stylesheet" type="text/css" href="./css/MediaPlayer.css" />
+
+    <!-- google-font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Fixed-Navigation-Bar -->
+    <div class="nav-container">
+      <nav>
+        <div class="logo-container">
+          <a href="#">
+            <img src="./Image/imagecode.png" />
+          </a>
+        </div>
+        <div class="flex-2">
+          <!-- to expand this portion -->
+          <a href="#"><p>Favourites</p></a>
+        </div>
+        <div class="search-box-container">
+          <input class="search-box" type="text" />
+          <i class="fas fa-search fa-lg search-box-search"></i>
+          <span class="search-box-text">Search</span>
+          <i class="fas fa-microphone fa-lg search-box-mic"></i>
+        </div>
+        <div class="notification-bell">
+          <i class="fas fa-bell fa-lg"></i>
+          <div class="red-circle"></div>
+          <!-- to make a red circle right beside the bell icon -->
+        </div>
+        <div class="my-photo">
+          <img
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg"
+          />
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main-Container -->
+    <div class="main-container">
+      <main id="main">
+        <!-- Animation-Gallery Section -->
+        <div id="animation-gallery">
+          <div class="image-container  mb">
+            <div class="transition-image slideIn">
+              <a href="#"><img src="./Image/hero-image1.jpg"/></a>
+            </div>
+
+            <div class="transition-image slideIn2">
+              <a href="#"><img src="./Image/hero-image2.jpg" /> </a>
+            </div>
+            <div class="transition-image slideIn3">
+              <a href="#">
+                <img src="./Image/hero-image3.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Latest-Release Section -->
+        <div id="Release-section">
+          <div>
+            <h1 class="heading-section ">
+              Latest Release
+            </h1>
+          </div>
+          <div class="Release-container mb">
+            <div class="image-containers div-margin fromRight">
+              <div class="R-image">
+                <a href=""><img src="./Image/albumart1.jpg"/></a>
+
+                <a href="">
+                  <i class="fas fa-play "> </i>
+                </a>
+              </div>
+              <div class="image-detail">
+                <h3>Los Angeles</h3>
+                <p>AUG 11 2017</p>
+              </div>
+              <div class="image-duration">
+                <input type="checkbox" id="release-checkbox" />
+                <label for="release-checkbox"
+                  ><i class="fas fa-ellipsis-h"> </i
+                ></label>
+                <span class="time-size">4:44</span>
+                <div class="latest-release-dropdown">
+                  <div class="drop-menu">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Play</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-list"></i>
+                    <p>Add To Playlist</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-containers div-margin fromRight">
+              <div class="R-image">
+                <a href=""><img src="./Image/albumart2.jpg"/></a>
+                <a href="">
+                  <i class="fas fa-play "></i>
+                </a>
+              </div>
+              <div class="image-detail">
+                <h3>Los Angeles</h3>
+                <p>AUG 11 2017</p>
+              </div>
+              <div class="image-duration">
+                <input type="checkbox" id="release-checkbox1" />
+
+                <label for="release-checkbox1"
+                  ><i class="fas fa-ellipsis-h"> </i
+                ></label>
+                <span class="time-size">4:44</span>
+                <div class="latest-release-dropdown">
+                  <div class="drop-menu">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Play</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-list"></i>
+                    <p>Add To Playlist</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-containers fromLeft">
+              <div class="R-image">
+                <a href=""><img src="./Image/albumart3.jpg"/></a>
+                <a href="">
+                  <i class="fas fa-play "></i>
+                </a>
+              </div>
+              <div class="image-detail">
+                <h3>Los Angeles</h3>
+                <p>AUG 11 2017</p>
+              </div>
+              <div class="image-duration">
+                <input type="checkbox" id="release-checkbox2" />
+
+                <label for="release-checkbox2"
+                  ><i class="fas fa-ellipsis-h"> </i
+                ></label>
+                <span class="time-size">4:44</span>
+                <div class="latest-release-dropdown">
+                  <div class="drop-menu">
+                    <i class="fas fa-play=fa-play-circle"></i>
+                    <p>Play</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-list"></i>
+                    <p>Add To Playlist</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-containers div-margin fromLeft">
+              <div class="R-image">
+                <a href=""><img src="./Image/albumart5.jpg"/></a>
+                <a href="">
+                  <i class="fas fa-play "></i>
+                </a>
+              </div>
+              <div class="image-detail">
+                <h3>Los Angeles</h3>
+                <p>AUG 11 2017</p>
+              </div>
+              <div class="image-duration">
+                <input type="checkbox" id="release-checkbox3" />
+
+                <label for="release-checkbox3"
+                  ><i class="fas fa-ellipsis-h"> </i
+                ></label>
+                <span class="time-size">4:44</span>
+                <div class="latest-release-dropdown">
+                  <div class="drop-menu">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Play</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-list"></i>
+                    <p>Add To Playlist</p>
+                  </div>
+                  <div class="hr-line"></div>
+                  <div class="drop-menu">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Popular-Artists-Section -->
+        <div id="popular-artist">
+          <div class="">
+            <h1 class="heading-section">
+              Popular Artist
+            </h1>
+          </div>
+          <div class="popular-artist-container">
+            <div class="Release-containers">
+              <div>
+                <div class="Popular-image">
+                  <a href="MediaPlay.html">
+                    <img src="./Image/selena-gomez.jpg" />
+
+                    <i class="fas fa-play play-icon"></i>
+                  </a>
+                </div>
+                <h5 class="mauto">Selena Gomez</h5>
+              </div>
+              <div>
+                <div class="Popular-image">
+                  <a href="MediaPlay.html">
+                    <img src="./Image/imagine-dragons.jpg" />
+
+                    <i class="fas fa-play play-icon"></i>
+                  </a>
+                </div>
+                <h5 class="mauto">Imagine Dragons</h5>
+              </div>
+              <div>
+                <div class="Popular-image">
+                  <a href="MediaPlay.html">
+                    <img src="./Image/maroon5.jpg" />
+                    <i class="fas fa-play play-icon"></i>
+                  </a>
+                </div>
+                <h5 class="mauto">Maroon5</h5>
+              </div>
+              <div>
+                <div class="Popular-image">
+                  <a href="MediaPlay.html">
+                    <img src="./Image/charlie-puth.jpg" />
+                    <i class="fas fa-play play-icon"></i>
+                  </a>
+                </div>
+                <h5 class="mauto">Charlie Puth</h5>
+              </div>
+              <div>
+                <div class="Popular-image">
+                  <a href="MediaPlay.html">
+                    <img src="./Image/bruno-mars.jpg" />
+
+                    <i class="fas fa-play play-icon"></i>
+                  </a>
+                </div>
+                <h5 class="mauto">Bruno Mars</h5>
+              </div>
+              <div>
+                <div class="Popular-image">
+                  <a href="MediaPlay.html">
+                    <img
+                      src="./Image/five-tips-for-front-end-web-development.jpg"
+                    />
+
+                    <i class="fas fa-play play-icon"></i>
+                  </a>
+                </div>
+                <h5 class="mauto">Halsey</h5>
+              </div>
+            </div>
+            <div class="popular-music-type mt">
+              <div class="music-type">
+                <img src="./Image/love.jpg" />
+                <p class="caption">Love</p>
+              </div>
+              <div class="music-type">
+                <img src="./Image/retro.jpg" />
+                <p class="caption">Retro</p>
+              </div>
+              <div class="music-type">
+                <img src="./Image/rock.jpg" />
+                <p class="caption">Chill</p>
+              </div>
+              <div class="music-type">
+                <img src="./Image/pop.jpg" />
+                <p class="caption">WorkOut</p>
+              </div>
+              <div class="music-type">
+                <img src="./Image/workout.jpg" />
+                <p class="caption">Rock</p>
+              </div>
+              <div class="music-type">
+                <img src="./Image/chill.jpg" />
+                <p class="caption">Pop</p>
+              </div>
+            </div>
+            <div class="popular-genre mt">
+              <div class="genre-image">
+                <a href=""><img src="./Image/party.jpg" /> </a>
+              </div>
+              <div class="genre-image">
+                <a href=""><img src="./Image/roadtrip.jpg" /> </a>
+              </div>
+              <div class="genre-image">
+                <a href=""><img src="./Image/electronic.jpg" /> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Latest English Song -->
+        <div id="latest-english">
+          <div class="">
+            <h1 class="heading-section">
+              Latest English
+            </h1>
+          </div>
+          <div class="latest-english-container mt">
+            <div class="media-container">
+              <div class="english-media">
+                <img src="/Image/love.jpg" />
+              </div>
+              <div class="media-detail1">
+                Come Back In
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="media-container">
+              <div class="english-media">
+                <img src="/Image/album-cover2.jpg" />
+              </div>
+              <div class="media-detail1">
+                Come Back In
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="media-container">
+              <div class="english-media">
+                <img src="/Image/album-cover3.jpg" />
+              </div>
+              <div class="media-detail1">
+                Believer
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="media-container">
+              <div class="english-media">
+                <img src="/Image/album-cover4.jpg" />
+              </div>
+              <div class="media-detail1">
+                Nostalghia
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="media-container">
+              <div class="english-media">
+                <img src="/Image/album-cover5.jpg" />
+              </div>
+              <div class="media-detail1">
+                I Remember
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="media-container">
+              <div class="english-media">
+                <img src="/Image/love.jpg" />
+              </div>
+              <div class="media-detail1">
+                Way Too High
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest Hindi Song -->
+        <div id="latest-hindi">
+          <div class="">
+            <h1 class="heading-section">
+              Latest Hindi
+            </h1>
+          </div>
+          <div class="latest-english-container mt mb">
+            <div class="media-container">
+              <div class="english-media">
+                <img src="Image/bolly5.jpg" />
+              </div>
+              <div class="media-detail1">
+                Bharat
+              </div>
+              <div class="media-date">
+                JAN 20220
+              </div>
+            </div>
+
+            <div class="">
+              <div class="english-media">
+                <img src="Image/bolly2.jpg" />
+              </div>
+              <div class="media-detail1">
+                BAGRANGI BHAIJAN
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="">
+              <div class="english-media">
+                <img src="Image/bolly3.jpg" />
+              </div>
+              <div class="media-detail1">
+                MURDER
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="">
+              <div class="english-media">
+                <img src="Image/bolly1.jpeg" />
+              </div>
+              <div class="media-detail1">
+                Come Back In
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="">
+              <div class="english-media">
+                <img src="Image/bolly4.jpg" />
+              </div>
+              <div class="media-detail1">
+                LOVESHUDA
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+            <div class="">
+              <div class="english-media">
+                <img src="/Image/dim-dim-light.jpg" />
+              </div>
+              <div class="media-detail1">
+                Come Back In
+              </div>
+              <div class="media-date">
+                AUG 11,2017
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <input type="checkbox" id="aside-toggle" />
+      <label for="aside-toggle" class="show-aside-toggle">show queue </label>
+
+      <!-- aside group -->
+
+      <aside id="aside">
+        <div class="aside-Head enlarge">
+          <div>
+            <h3 class="heading mt">My PlayList</h3>
+          </div>
+          <div class="dropdown">
+            <input type="checkbox" id="release-dropdowns" />
+            <label for="release-dropdowns">
+              Queue
+              <i class="fas fa-caret-down"> </i>
+            </label>
+            <div class="latest-release-dropdowns">
+              <div class="drop-menu">
+                <i class="fas fa-play-circle"></i>
+                <p>Play</p>
+              </div>
+              <div class="hr-line"></div>
+
+              <div class="drop-menu">
+                <i class="fas fa-list"></i>
+                <p>Add To Playlist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Queue-song-container">
+          <div class="song-container">
+            <div class="music-no">
+              <p>01</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart3.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Plastic Heart</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>02</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart1.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Fireflies</label>
+              <label class="label2 ml">Owl City</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>03</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart2.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Sunset</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>04</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart4.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Believer</label>
+              <label class="label2 ml">Imagine Dragons</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>05</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart5.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Old Man</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>06</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/album-cover2.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Bone Dry</label>
+              <label class="label2 ml">Neil Young</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>07</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/album-cover4.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Hurts So Good</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>08</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart3.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Plastic Heart</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>09</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart3.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Plastic Heart</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>10</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart3.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Plastic Heart</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>11</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart3.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Plastic Heart</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="music-no">
+              <p>12</p>
+            </div>
+            <div class="music-pic">
+              <img src="./Image/albumart3.jpg" />
+            </div>
+            <div class="music-detail">
+              <label class="label1 ml">Plastic Heart</label>
+              <label class="label2 ml">Nostalghia</label>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-heart ml"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- footer section -->
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer-left-align ">
+            <div class="img-footer  mr">
+              <img src="./Image/album-cover5.jpg" alt="" />
+            </div>
+            <div class="description ">
+              <p>Imagine by John</p>
+              <p>John Lennon</p>
+            </div>
+            <div class="footer-icon">
+              <span>
+                <i class="fas fa-heart"></i>
+              </span>
+              <span>
+                <i class="fas fa-ban"></i>
+              </span>
+            </div>
+          </div>
+          <div class="footer-middle-align  ">
+            <div class="footer-icons">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <i class="fas fa-pause"></i>
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="footer-slider">
+              <label for=""> 1:40</label>
+              <input type="range" name="range" class="custom-range " />
+              <label for=""> 5:40</label>
+            </div>
+          </div>
+          <div class="footer-right-align">
+            <div class="volume-icon">
+              <i class="fas fa-stream"></i>
+              <i class="fas fa-mobile-alt"></i>
+              <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="navigator-icon">
+              <input type="range" class="custom-range1" />
+              <i class="fas fa-arrows-alt-h"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of footer section -->
+    </div>
+    <!-- font-awensome -->
+    <script src="all.js"></script>
+  </body>
+</html>

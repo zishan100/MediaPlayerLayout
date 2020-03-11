@@ -1,0 +1,92 @@
+/* animations */
+
+@keyframes comein { 
+    from{
+        transform: translate(-1000px, -1000px);
+       
+    }
+}
+
+
+@keyframes enlarge {
+    from{
+        transform: scale(0);
+        top: 1;
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes fromBottom1 {
+    from{
+        transform: translateY(1000px);
+    }
+}
+@keyframes fromBottom2{
+    from{
+        transform: translateY(500px)
+    }
+}
+
+@keyframes fromBottom3 {
+    from{
+        transform: translateY(200px);
+    }
+}
+
+@keyframes fromTop1 {
+    from{
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes dropdownAnimation {
+    from{
+        transform: translateY(-500px);
+    }
+}
+
+@keyframes slideIn {
+    from{
+        transform: translateX(-1000px);
+}}
+
+@keyframes slideIn2 {
+    from{
+        transform: translateX(-2000px);
+    }
+}
+@keyframes slideIn3 {
+    from{
+        transform: translateX(-3000px);
+    }
+}
+
+@keyframes fromBottomRight{
+    from{
+        transform: translate(1000px, 1000px);
+    }
+}
+@keyframes fromBottomLeft{
+    from{
+        transform: translate(-1000px, 1000px);
+    }
+}
+
+@keyframes fromRight{
+    from{
+        transform: translate(1000px);
+    }
+}
+@keyframes fromLeft{
+    from{
+        transform: translate(-1000px);
+    }
+}
+
+@keyframes opacity0to1 {
+    from{
+        opacity: 0;
+    }
+}
